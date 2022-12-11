@@ -66,8 +66,9 @@ CIRCUIT DIAGRAM
 
 
 
-**PROGRAM** 
-'''
+PROGRAM
+
+```
 void setup()
 {
  pinMode(A0,INPUT);
@@ -92,12 +93,12 @@ void loop()
    digitalWrite(7,HIGH);
  }
 }
-'''
+```
 
 
-**
-**Simulation output:** 
-**
+
+Simulation output:
+
 
 
 ![image](https://user-images.githubusercontent.com/97553333/206888008-a7cbe2d9-0a0b-462f-b314-e53445c4a7b1.png)
