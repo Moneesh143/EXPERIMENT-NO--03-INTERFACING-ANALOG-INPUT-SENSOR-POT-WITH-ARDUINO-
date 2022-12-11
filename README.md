@@ -67,6 +67,32 @@ CIRCUIT DIAGRAM
 
 
 **PROGRAM** 
+
+void setup()
+{
+ pinMode(A0,INPUT);
+ pinMode(7,OUTPUT);
+ pinMode(8,OUTPUT);
+ Serial.begin(9600);
+}
+
+void loop()
+{
+ int Sensorvalue = analogRead(A0);
+ Serial.print("Sensor Value= ");
+ Serial.println(Sensorvalue);
+ if(Sensorvalue<=30)
+ {
+   digitalWrite(8,HIGH);
+   digitalWrite(7,LOW);
+ }
+ else if(Sensorvalue>=500)
+ {
+   digitalWrite(8,LOW);
+   digitalWrite(7,HIGH);
+ }
+}
+
  
 
 
@@ -82,7 +108,8 @@ CIRCUIT DIAGRAM
 **
 
 
-[My image](username.github.com/repository/img/image.jpg)
+![image](https://user-images.githubusercontent.com/97553333/206888008-a7cbe2d9-0a0b-462f-b314-e53445c4a7b1.png)
+
 
 
 
